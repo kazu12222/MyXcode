@@ -17,6 +17,10 @@
 		E848F81D282155CD00F16792 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E848F7F3282155CB00F16792 /* ContentView.swift */; };
 		E848F81E282155CD00F16792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E848F7F4282155CD00F16792 /* Assets.xcassets */; };
 		E848F81F282155CD00F16792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E848F7F4282155CD00F16792 /* Assets.xcassets */; };
+		E848F8322821566600F16792 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E848F8312821566600F16792 /* ToDoItem.swift */; };
+		E848F8332821566600F16792 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E848F8312821566600F16792 /* ToDoItem.swift */; };
+		E848F835282157CB00F16792 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E848F834282157CB00F16792 /* TaskView.swift */; };
+		E848F836282157CB00F16792 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E848F834282157CB00F16792 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		E848F812282155CD00F16792 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E848F816282155CD00F16792 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		E848F818282155CD00F16792 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		E848F8312821566600F16792 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		E848F834282157CB00F16792 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				E848F7F2282155CB00F16792 /* SampleToDoApp_SwiftUIApp.swift */,
+				E848F8312821566600F16792 /* ToDoItem.swift */,
+				E848F834282157CB00F16792 /* TaskView.swift */,
 				E848F7F3282155CB00F16792 /* ContentView.swift */,
 				E848F7F4282155CD00F16792 /* Assets.xcassets */,
 			);
@@ -301,6 +309,8 @@
 			files = (
 				E848F81C282155CD00F16792 /* ContentView.swift in Sources */,
 				E848F81A282155CD00F16792 /* SampleToDoApp_SwiftUIApp.swift in Sources */,
+				E848F8322821566600F16792 /* ToDoItem.swift in Sources */,
+				E848F835282157CB00F16792 /* TaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +320,8 @@
 			files = (
 				E848F81D282155CD00F16792 /* ContentView.swift in Sources */,
 				E848F81B282155CD00F16792 /* SampleToDoApp_SwiftUIApp.swift in Sources */,
+				E848F8332821566600F16792 /* ToDoItem.swift in Sources */,
+				E848F836282157CB00F16792 /* TaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kazu1222.SampleToDoApp-SwiftUI";
 				PRODUCT_NAME = "SampleToDoApp+SwiftUI";
@@ -504,6 +517,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kazu1222.SampleToDoApp-SwiftUI";
 				PRODUCT_NAME = "SampleToDoApp+SwiftUI";
