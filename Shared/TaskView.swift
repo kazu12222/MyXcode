@@ -10,15 +10,23 @@ import SwiftUI
 struct TaskView: View {
     var title:String
     var dateString:String
+    @State private var isPresented = false
+    
     var body:some View {
         VStack(alignment:.leading){
-            Text(title)
-                .font(.body)
-                .bold()
-            Text(dateString)
-                .font(.caption)
-                .foregroundColor(.gray)
-            
+            Button(action: {
+                isPresented.toggle()
+            }, label: {
+                Text(title)
+                    .font(.body)
+                    .bold()
+                Text(dateString)
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            })
+            .sheet(isPresented: $isPresented, content: {
+                Text("test")
+            })
         }
     }
 }
